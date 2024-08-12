@@ -68,6 +68,7 @@ main .progress {
   background-color: #E5E7EB;
   border-radius: 2px;
   overflow: hidden;
+  cursor: pointer;
 }
 main .progress .progress-filled {
   height: 4px;

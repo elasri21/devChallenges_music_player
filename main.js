@@ -36,6 +36,14 @@ function skip() {
     audio.currentTime += step;
     handleProgress();
 }
+
+// scrube
+function scrub(e){
+    const scrubTime = (e.offsetX / progress.offsetWidth) * audio.duration;
+    audio.currentTime = scrubTime;
+    handleProgress();
+}
+
 player.addEventListener("click", function() {
     if (this.classList.contains('paused')) {
         this.innerHTML = '<i class="fa-solid fa-pause"></i>';
@@ -53,17 +61,15 @@ audio.addEventListener("timeupdate", handleProgress);
 forwardBtn.addEventListener("click", skip);
 backwarddBtn.addEventListener("click", skip);
 audio.addEventListener("ended", function() {
-    console.log(this.src);
-    console.log(data[0]['source']);
-    console.log(data[1]['source']);
-    if (this.src === data[0]['source']) {
+    if (this.dataset.singer == data[0]['singer']) {
         updateSong(data[1]);
         this.src = data[1]['source'];
-        console.log("song 2 playing")
+        this.dataset.singer = data[1]['singer'];
     } else {
         updateSong(data[0]);
         this.src = data[0]['source'];
-        console.log("song 1 playing")
+        this.dataset.singer = data[0]['singer'];
     }
     audio.autoplay = 'on';
 });
+progress.addEventListener("click", scrub);

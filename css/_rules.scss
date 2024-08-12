@@ -41,6 +41,7 @@ main {
         background-color: $light-grey;
         border-radius: 2px;
         overflow: hidden;
+        cursor: pointer;
         .progress-filled {
             height: 4px;
             width: 0;
