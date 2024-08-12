@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "name": "Lost in the City Lights",
+        "cover": "./assets/cover-1.png",
+        "singer": "Cosmo Sheldrake",
+        "source": "./assets/lost-in-city-lights-145038.mp3"
+    },
+    {
+        "id": 2,
+        "name": "Forest Lullaby",
+        "cover": "./assets/cover-2.png",
+        "singer": "Lesfm",
+        "source": "./assets/forest-lullaby-110624.mp3"
+    }
+]

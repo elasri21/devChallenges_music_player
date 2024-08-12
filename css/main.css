@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  background-image: url("../assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+main {
+  margin: 50px 30px;
+  background-color: #212936;
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 400px;
+}
+main .poster {
+  width: 100%;
+  margin-bottom: 20px;
+}
+main .poster img {
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+}
+main h1 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #E5E7EB;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 6px;
+}
+main p {
+  font-size: 12px;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 300;
+  color: #4D5562;
+}
+main audio {
+  display: block;
+  margin-top: 30px;
+  position: absolute;
+  top: -100%;
+}
+main .progress {
+  margin-top: 30px;
+  height: 4px;
+  width: 100%;
+  background-color: #E5E7EB;
+  border-radius: 2px;
+  overflow: hidden;
+}
+main .progress .progress-filled {
+  height: 4px;
+  width: 0;
+  background-color: #C93B76;
+}
+main .control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 20px;
+}
+main .control button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .control button.play, main .control button.pause {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #C93B76;
+}
+main .control button.play i, main .control button.pause i {
+  font-size: 18px;
+  color: #E5E7EB;
+}
+
+/*# sourceMappingURL=main.css.map */

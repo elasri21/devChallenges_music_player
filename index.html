@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <main>
+        <div class="poster">
+            <img src="./assets/cover-1.png" alt="cover 1">
+        </div>
+        <h1>Lost in the City Lights</h1>
+        <p class="singer">Cosmo Sheldrake</p>
+        <audio src="./assets/lost-in-city-lights-145038.mp3" controls></audio>
+        <div class="progress">
+            <div class="progress-filled"></div>
+        </div>
+        <div class="control">
+            <button class="backward" data-skip="-10">
+                <img src="./assets/Stop_and_play_fill-1.svg" alt="">
+            </button>
+            <button class="play paused">
+                <img src="./assets/Play_fill.svg" alt="">
+            </button>
+            <!-- <button class="pause">
+                <i class="fa-solid fa-pause"></i>
+            </button> -->
+            <button class="forward" data-skip="10">
+                <img src="./assets/Stop_and_play_fill.svg" alt="">
+            </button>
+        </div>
+    </main>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
